@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2
+Shortreads_splitTR_iss1,examples/data/iss1_R1.fastq.gz,examples/data/iss1_R2.fastq.gz
+Shortreads_splitTR_iss2,examples/data/iss2_R1.fastq.gz,examples/data/iss2_R2.fastq.gz

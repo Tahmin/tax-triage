@@ -1,0 +1,37 @@
+reports:
+  multiqc_report.html:
+    display: "MultiQC HTML report"
+  "**/report/*report.pdf":
+    display: "Organism Discovery Report(s)"
+  "**/report/*report.txt":
+    display: "Organism Discovery Analysis"
+  "**/convert/*merged.tsv":
+    display: "Confidence Table"
+  "**/report/*.html":
+    display: "Krona Plots"
+  "**/fastqc/*_fastqc.html":
+    display: "FASTQC output (Illumina Only)"
+  "**/nanoplot/*_NanoPlot-report.html":
+    display: "Nanoplot output (Nanopore Only)"
+  "**/fastp/*.fastp.html":
+    display: "fastp output (QC Trimming)"
+  "**/alignment/*.txt":
+    display: "Coverage, Confidence, Base Quality, and Map Stats"
+  "**/bcftools/*consensus.fa":
+    display: "Consensus Generation File"
+  "**/minimap2/*.bam":
+    display: "MAPQ Filtered and Sorted Minimap2 BAM File(s)"
+  "**/hisat2/*.bam":
+    display: "MAPQ Filtered and Sorted Hisat2 BAM File(s)"
+  "**/bowtie2/*.bam":
+    display: "MAPQ Filtered and Sorted Bowtie2 BAM File(s)"
+  "**/alignment/*.bam":
+    display: "MAPQ Filtered and Sorted and Merged (if multiple reference files) BAM File(s)"
+  "**/top/*top_report.tsv":
+    display: "Top Taxa Per Rank post-Kraken2"
+  "**/top/krakenreport.merged_mqc.tsv":
+    display: "All Samples Top Hits Post-Kraken2"
+  "**/kraken2/*report.txt":
+    display: "Raw Kraken2 Reports"
+  "**/map/*assembly_protein_map.txt":
+    display: "Map of protein alignments from DIAMOND with corresponding hits to pathogenicity annotations."

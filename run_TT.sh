@@ -1,0 +1,27 @@
+  nextflow run ./main.nf \
+    --input examples/Samplesheet_simple.csv \
+    --db standard8 \
+    --download_db \
+    --max_memory 60.GB \
+    --max_cpus 4 \
+    --outdir ./results/results_standard8_with_params \
+    --platform ILLUMINA \
+    --trim \
+    --remove_taxids "9606" \
+    --skip_fastp false \
+    --skip_plots false \
+    --skip_kraken2 false \
+    --skip_realignment false \
+    --skip_multiqc false \
+    --use_denovo false \
+    --reference_assembly false \
+    --get_variants false \
+    --get_features false \
+    --pathogens false \
+    --top_hits_count 10 \
+    --min_conf 0.5 \
+    -profile local,docker \
+    -with-report ./results/results_standard8_with_params/report.html \
+    -with-timeline ./results/results_standard8_with_params/timeline.html \
+    -with-trace ./results/results_standard8_with_params/trace.tsv \
+    -with-dag ./results/results_standard8_with_params/flowchart.dot
